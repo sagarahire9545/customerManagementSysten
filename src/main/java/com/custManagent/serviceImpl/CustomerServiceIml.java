@@ -37,7 +37,7 @@ public class CustomerServiceIml implements CustomerService {
             if (phoneNumber != null && !phoneNumber.isEmpty()) {
                 customer.setPhoneNumber(phoneNumber);
             }
-            customer.setRoleId(1);
+            customer.setRoleId(2); //change create customer 2 Is a Customer
             customerRepository.save(customer);
 
         } catch(Exception e){
