@@ -16,7 +16,7 @@ atep 13 - In token payload we saved/claims contact no and roleId.
 step 14 - Authorization api's in controller, get roleId/admon or user from token and apply this roldId conditions.restion api's and secure api's using token also.
 step 15 - same way all api's secure.
 step 16 - each and every api's test.
-
+step 17 - Configuration the swagger also and add links & screenshots on document.
 Also there are many exception occured and also fixed it.
 
 Here my Project Github Respository Link - https://github.com/sagarahire9545/customerManagementSysten/tree/master/
