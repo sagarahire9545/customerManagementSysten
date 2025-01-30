@@ -161,6 +161,8 @@ public class OrderServiceImpl implements OrderService {
 
                 for (Order order : orders) {
                     OrderDto orderDto = orderMapper.mapEntityToDto(order);
+                    //add customer Id in orders details
+                    orderDto.setCustomerId(order.getCustomer().getId());
                     orderDtos.add(orderDto);
                 }
 
@@ -201,6 +203,8 @@ public class OrderServiceImpl implements OrderService {
 
                 for (Order order : orders) {
                     OrderDto orderDto = orderMapper.mapEntityToDto(order);
+                    //add customer Id in orders details
+                    orderDto.setCustomerId(order.getCustomer().getId());
                     orderDtos.add(orderDto);
                 }
                 log.info("Successfully retrieved orders within the date range: {} to {}", startDate, endDate);
